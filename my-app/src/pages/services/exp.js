@@ -5,7 +5,8 @@ export const getTest = () => {
 
 export const getMenu = (time) => {
   return () => {
-    return fetch(`http://localhost:5000/comments?postId=${time}`).then((e) =>
+    console.log("asd");
+    return fetch(`http://localhost:5000/menu?data=${time}`).then((e) =>
       e.json()
     );
   };
